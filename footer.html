@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html lang="en">
+<!--<![endif]-->
+
+<head>
+    <meta charset="utf-8" />
+    <title>米哈游-TECH OTAKUS SAVE THE WORLD</title>
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <meta name="eeyore" content="myy@eeyore.xyz" />
+    <meta name="description" content="miHoYo-index" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <link rel="icon" href="image/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/public.css" />
+    <script src="js/iconfont.js"></script>
+</head>
+
+<body>
+    <!--[if lt IE 7]>
+      <p class="browsehappy">
+        You are using an <strong>outdated</strong> browser. Please
+        <a href="#">upgrade your browser</a> to improve your experience.
+      </p>
+    <![endif]-->
+    <div class="backTop">
+        <svg class="icon" aria-hidden="false" style="font-size:3.6rem;z-index:2222;transform:rotate(-90deg)">
+    <use xlink:href="#icon-more"></use>
+  </svg>
+    </div>
+    <footer>
+        <div>
+            <p>
+                |健康游戏忠告：抵制不良游戏，拒绝盗版游戏。注意自我保护，谨防上当受骗。适度游戏益脑，沉迷游戏伤身。合理安排时间，享受健康生活。
+            </p>
+            <p>|适龄提示：本游戏适合17岁（含）以上玩家</p>
+            <p>法律声明 隐私保护 成长关爱平台</p>
+            <p>沪ICP备13042115号-2沪文网（2018）6842-441号 沪B-20150180</p>
+            <p>
+                <img src="image/footer-beian.png" />沪公网安备3101040200114号</p>
+            </p>
+            <p>
+                2014-2018 All Rights Reserved 上海米哈游网络科技股份有限公司版权所有
+                <img src="image/footer-wen.png" alt="">
+                <img src="image/footer-yingye.png" alt="">
+                <img src="image/footer-v&v.png" alt="">
+                <img src="image/footer-jbzx.png" alt="">
+                <img src="image/footer-hsm.png" alt="">
+            </p>
+            <p>
+                地址：上海市徐汇区宜山路700号C4栋5层 前台电话：021-60331122（工作时间：工作日10点--18点）
+            </p>
+            <p>
+                举报电话：021-34203135（工作时间：每天10点--20点） 举报邮箱：tousu@mihoyo.com
+            </p>
+        </div>
+    </footer>
+    <script src="js/jquery.min.js"></script>
+    <script>
+        $(function() {
+            $(".backTop").hide();
+            $('.backTop').hover(function() {
+                $(this).css({
+                    cursor: 'pointer'
+                })
+            });
+            $(document).scroll(function() {
+                var height = $(window).height();
+                if ($(window).scrollTop() > height / 2) {
+
+                    $(".backTop").fadeIn(500);
+                } else {
+                    $(".backTop").fadeOut(500);
+                }
+            })
+            $('.backTop').click(function() {
+                $("html,body").animate({
+                    scrollTop: 0
+                }, 'slow');
+            });
+        })
+    </script>
+</body>
+
+</html>

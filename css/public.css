@@ -1,0 +1,174 @@
+/* 导航栏icon */
+
+.icon {
+    width: 1em;
+    height: 1em;
+    vertical-align: -0.15em;
+    fill: currentColor;
+    overflow: hidden;
+    font-size: 1.4rem;
+}
+
+
+/* 公共头部 */
+
+
+/* PC端 */
+
+#navBar {
+    width: 100%;
+    display: -webkit-flex;
+    /* Safari */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#navBar a {
+    width: 10rem;
+    margin: 1rem 0.5rem;
+    padding: 0.3rem 1rem;
+    font-size: 1.2rem;
+    color: #4cd7e8;
+    border-radius: 2rem;
+    text-align: center;
+    border: 0.1rem solid #4cd7e8;
+}
+
+#navBar a:nth-child(3) {
+    width: 14rem;
+    border: none;
+}
+
+#navBar a img {
+    width: 12rem;
+    height: 5rem;
+}
+
+#navBar a:hover,
+#navTog a:hover {
+    text-decoration: none;
+    color: #4cd7e8;
+}
+
+
+/* ipad phone */
+
+#navTog {
+    text-align: center;
+    background: url("../image/pro-periphery-bg.png") no-repeat center center;
+    background-size: cover;
+    width: 100%;
+}
+
+#navTog a img,
+#navTog ul,
+#navTog ul li {
+    border-radius: 2em;
+}
+
+#navTog a img {
+    margin: 1rem;
+    width: 13rem;
+    height: 5rem;
+    display: none;
+}
+
+#navTog ul {
+    background: url("../image/navTog-bg.gif") no-repeat center center;
+    background-size: cover;
+    width: 100%;
+    display: none;
+}
+
+#navTog ul li {
+    padding: 1rem 2rem;
+}
+
+#navTog ul li a {
+    font-size: 1.4rem;
+}
+
+#navTog ul li:hover {
+    background: rgba(0, 0, 0, 0.4);
+}
+
+.h-hr {
+    margin-top: -1rem;
+    width: 100%;
+    height: 0.3rem;
+    background-color: #4cd7e8;
+}
+
+
+/* 公共尾部 */
+
+.backTop {
+    position: fixed;
+    bottom: 3rem;
+    right: 3rem;
+    width: 4rem;
+    height: 4rem;
+}
+
+footer {
+    width: 100%;
+    background-color: #000;
+    padding-top: 0.5rem;
+    padding-bottom: 0.2rem;
+}
+
+footer div {
+    width: 50%;
+    margin: 0 auto;
+}
+
+footer div p {
+    color: #aaaaaa;
+    line-height: 1.2rem;
+    font-size: 0.6rem;
+}
+
+footer div p:nth-child(4) {
+    padding-top: 0.6rem;
+}
+
+footer div p img {
+    display: inline-block;
+    margin: 0 0.2rem;
+}
+
+footer div p:nth-child(7) img {
+    height: 2rem;
+}
+
+@media all and (max-width: 768px) {
+    footer div p:nth-child(7) img {
+        height: 1.5rem;
+    }
+}
+
+@media all and (max-width: 1024px) {
+    #navBar {
+        display: none;
+    }
+    #navTog a img {
+        display: block;
+    }
+    footer {
+        padding-top: 0.3rem;
+    }
+    footer div {
+        width: 100%;
+    }
+    .backTop {
+        bottom: 2rem;
+        right: 2rem;
+    }
+}
+
+@media all and (max-width: 1200px) {
+    footer div {
+        width: 80%;
+    }
+}

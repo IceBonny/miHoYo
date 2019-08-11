@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html lang="en">
+<!--<![endif]-->
+
+<head>
+    <meta charset="utf-8" />
+    <title>米哈游-TECH OTAKUS SAVE THE WORLD</title>
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <meta name="eeyore" content="myy@eeyore.xyz" />
+    <meta name="description" content="miHoYo-index" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <link rel="icon" href="image/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="css/public.css" />
+    <link rel="stylesheet" href="css/reset.css" />
+    <!-- icon -->
+    <script src="js/iconfont.js"></script>
+    <script src="js/jquery.min.js"></script>
+</head>
+
+<body>
+    <!--[if lt IE 7]>
+      <p class="browsehappy">
+        You are using an <strong>outdated</strong> browser. Please
+        <a href="#">upgrade your browser</a> to improve your experience.
+      </p>
+    <![endif]-->
+    <header>
+        <nav id="navBar">
+            <a href="company.html">
+                <svg class="icon" aria-hidden="true">
+            <use xlink:href="#icon-home"></use>
+          </svg> 公司简介
+            </a>
+            <a href="products.html">
+                <svg class="icon" aria-hidden="true">
+            <use xlink:href="#icon-game"></use>
+          </svg> 产品信息
+            </a>
+            <a href="index.html"><img src="image/logo.png" alt="" /></a>
+            <a href="jo-in.html">
+                <svg class="icon" aria-hidden="true">
+            <use xlink:href="#icon-jiarubanji"></use>
+          </svg> 加入我们
+            </a>
+            <a href="contact.html">
+                <svg class="icon" aria-hidden="true">
+            <use xlink:href="#icon-lianxiwomen"></use>
+          </svg> 联系我们
+            </a>
+        </nav>
+        <nav id="navTog">
+            <a href="#"><img src="image/logo.png" alt="" /></a>
+            <ul>
+                <li>
+                    <a href="index.html">
+                        <svg class="icon" aria-hidden="true">
+                <use xlink:href="#icon-link"></use>
+              </svg> 首页
+                    </a>
+                </li>
+                <li>
+                    <a href="company.html">
+                        <svg class="icon" aria-hidden="true">
+                <use xlink:href="#icon-home"></use>
+              </svg> 公司简介
+                    </a>
+                </li>
+                <li>
+                    <a href="products.html">
+                        <svg class="icon" aria-hidden="true">
+                <use xlink:href="#icon-game"></use>
+              </svg> 产品信息
+                    </a>
+                </li>
+                <li>
+                    <a href="jo-in.html">
+                        <svg class="icon" aria-hidden="true">
+                <use xlink:href="#icon-jiarubanji"></use>
+              </svg> 加入我们
+                    </a>
+                </li>
+                <li>
+                    <a href="contact.html">
+                        <svg class="icon" aria-hidden="true">
+                <use xlink:href="#icon-lianxiwomen"></use>
+              </svg> 联系我们
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <div class="h-hr"></div>
+    </header>
+    <script>
+        $(function() {
+            $("#navTog a:first-child").click(function() {
+                $(this)
+                    .next()
+                    .stop()
+                    .slideToggle({
+                        display: "block"
+                    });
+            });
+        });
+    </script>
+</body>
+
+</html>
